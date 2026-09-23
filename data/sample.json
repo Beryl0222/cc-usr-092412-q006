@@ -1,0 +1,9 @@
+{
+  "event_id": "092108-015-sample-001",
+  "event_type": "DESIGN_CLEARED",
+  "aggregate_type": "collaboration_design",
+  "aggregate_id": "park_festival_collaboration-001",
+  "occurred_at": "2026-09-20T18:00:00+08:00",
+  "version": 1,
+  "summary": "登记公园节令联名履约的首条领域记录"
+}
