@@ -8,3 +8,8 @@ test("样例符合领域约定", async () => {
   const sample = JSON.parse(await readFile(new URL("../data/sample.json", import.meta.url), "utf8"));
   assert.deepEqual(validateEvent(sample), []);
 });
+
+test("重组迁移样例符合领域约定", async () => {
+  const sample = JSON.parse(await readFile(new URL("../data/sample-reconfiguration.json", import.meta.url), "utf8"));
+  assert.deepEqual(validateEvent(sample), []);
+});

@@ -1,6 +1,7 @@
 {
   "$schema": "https://json-schema.org/draft/2020-12/schema",
   "title": "公园节令联名履约领域事件",
+  "description": "事件信封一旦追加即不可原地改写；组件批次、装配版本、渠道额度、标签快照、组合承诺、重组方案、礼盒实例、清算与合作方责任分别使用独立聚合留痕。",
   "type": "object",
   "required": [
     "event_id",
@@ -21,9 +22,33 @@
       "enum": [
         "DESIGN_CLEARED",
         "COMPONENT_ACCEPTED",
+        "LOT_QUARANTINED",
+        "LOT_RELEASED",
+        "LABEL_SNAPSHOT_TAKEN",
+        "ASSEMBLY_VERSION_PUBLISHED",
+        "CHANNEL_QUOTA_OPENED",
+        "COMMITMENT_PROMISED",
+        "RECONFIGURATION_PROPOSED",
+        "LABEL_APPROVAL_GRANTED",
+        "QUOTA_APPROVAL_GRANTED",
+        "PARTNER_APPROVAL_GRANTED",
+        "PARTNER_APPROVAL_REJECTED",
+        "RECONFIGURATION_EXECUTED",
+        "COMMITMENT_MIGRATED",
+        "COMMITMENT_FROZEN",
+        "GIFT_BOX_ASSEMBLED",
+        "GIFT_BOX_CLAIMED",
+        "BOX_IMPACT_NOTICE_APPENDED",
+        "FULFILLMENT_RECEIPT_ACCEPTED",
+        "FULFILLMENT_RECEIPT_HELD",
+        "HELD_RECEIPT_RESOLVED",
+        "CLEARANCE_PAUSED",
+        "CLEARANCE_RESUMED",
+        "CLEARANCE_SETTLED",
+        "LIABILITY_ASSIGNED",
+        "REMEDY_COMPLETED",
         "BUNDLE_RELEASED",
-        "ORDER_RESERVED",
-        "REMEDY_COMPLETED"
+        "ORDER_RESERVED"
       ]
     },
     "aggregate_type": {
@@ -31,6 +56,14 @@
       "enum": [
         "collaboration_design",
         "component_lot",
+        "assembly_version",
+        "label_snapshot",
+        "channel_quota",
+        "bundle_commitment",
+        "reconfiguration_plan",
+        "gift_box",
+        "clearance_batch",
+        "partner_liability",
         "bundle_batch",
         "customer_order"
       ]

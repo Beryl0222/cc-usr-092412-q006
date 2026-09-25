@@ -1,0 +1,23 @@
+{
+  "event_id": "migrate-c-gb-0042",
+  "event_type": "COMMITMENT_MIGRATED",
+  "aggregate_type": "bundle_commitment",
+  "aggregate_id": "c-gb",
+  "occurred_at": "2026-09-21T09:00:00+08:00",
+  "version": 2,
+  "summary": "团购承诺 c-gb 剩余 14 份由 asm-v1/label-v1 迁移至 asm-v2b/label-v3",
+  "plan_id": "plan-1",
+  "quantity": 14,
+  "from_assembly_id": "asm-v1",
+  "to_assembly_id": "asm-v2b",
+  "from_label_id": "label-v1",
+  "to_label_id": "label-v3",
+  "from_quota_id": "q-gb-v1",
+  "to_quota_id": "q-gb-v2b",
+  "released": [
+    { "lot_id": "lot-mooncake-A", "qty": 14 }
+  ],
+  "acquired": [
+    { "lot_id": "lot-mooncake-C", "qty": 14 }
+  ]
+}
