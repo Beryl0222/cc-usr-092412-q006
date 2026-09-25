@@ -1,11 +1,11 @@
 {
   "name": "park-festival-collaboration",
-  "version": "0.1.0",
+  "version": "0.2.0",
   "private": true,
   "type": "module",
-  "description": "领域事件基础校验",
+  "description": "公园节令联名礼盒组合承诺与重组履约",
   "scripts": {
     "test": "node --test",
-    "build": "node --check src/validator.js"
+    "build": "node --check src/validator.js && node --check src/domain/events.js && node --check src/domain/state.js && node --check src/domain/service.js && node --check src/domain/explain.js && node --check src/domain/index.js"
   }
 }

@@ -21,8 +21,37 @@
       "enum": [
         "DESIGN_CLEARED",
         "COMPONENT_ACCEPTED",
+        "COMPONENT_INSPECTION_RECORDED",
+        "COMPONENT_SHORTAGE_DECLARED",
+        "COMPONENT_RESERVATION_ACQUIRED",
+        "COMPONENT_RESERVATION_RELEASED",
+        "COMPONENT_RESERVATION_CONSUMED",
+        "LABEL_SNAPSHOT_PUBLISHED",
+        "ASSEMBLY_VERSION_PUBLISHED",
         "BUNDLE_RELEASED",
+        "CHANNEL_QUOTA_CONFIGURED",
+        "CHANNEL_QUOTA_RESERVED",
+        "CHANNEL_QUOTA_RELEASED",
+        "CHANNEL_QUOTA_CONSUMED",
+        "CHANNEL_QUOTA_TRANSFERRED",
         "ORDER_RESERVED",
+        "COMMITMENT_FULFILLED",
+        "COMMITMENT_FROZEN",
+        "COMMITMENT_MIGRATED",
+        "BOX_ASSEMBLED",
+        "BOX_REDEEMED",
+        "REORGANIZATION_PROPOSED",
+        "REORGANIZATION_LABEL_CONFIRMED",
+        "REORGANIZATION_QUOTA_CONFIRMED",
+        "REORGANIZATION_PARTNER_REFUSED",
+        "REORGANIZATION_ITEM_EXECUTED",
+        "IMPACT_NOTIFICATION_APPENDED",
+        "LIABILITY_ASSIGNED",
+        "RECEIPT_SUBMITTED",
+        "RECEIPT_MERGED",
+        "RECEIPT_CONFLICT_DETECTED",
+        "SETTLEMENT_PAUSED",
+        "SETTLEMENT_CLEARED",
         "REMEDY_COMPLETED"
       ]
     },
@@ -32,7 +61,14 @@
         "collaboration_design",
         "component_lot",
         "bundle_batch",
-        "customer_order"
+        "customer_order",
+        "label_snapshot",
+        "assembly_version",
+        "channel_quota",
+        "reorganization_plan",
+        "fulfillment_receipt",
+        "bundle_unit",
+        "partner_liability"
       ]
     },
     "aggregate_id": {
@@ -50,6 +86,9 @@
     "summary": {
       "type": "string",
       "minLength": 1
+    },
+    "payload": {
+      "type": "object"
     }
   },
   "additionalProperties": true

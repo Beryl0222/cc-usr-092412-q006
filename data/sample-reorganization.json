@@ -1,0 +1,27 @@
+{
+  "event_id": "092508-031-sample-002",
+  "event_type": "REORGANIZATION_PROPOSED",
+  "aggregate_type": "reorganization_plan",
+  "aggregate_id": "plan-2026-autumn-001",
+  "occurred_at": "2026-09-25T10:30:00+08:00",
+  "version": 1,
+  "summary": "黄油饼干批次缺货，系统提出重组方案：商业渠道改用芝麻配方，公益渠道改用燕麦配方",
+  "payload": {
+    "plan_id": "plan-2026-autumn-001",
+    "trigger": { "type": "shortage", "lot_id": "lot-cookie-a" },
+    "items": [
+      {
+        "item_id": "plan-2026-autumn-001-item-cmt-stall",
+        "commitment_id": "cmt-stall",
+        "channel_id": "ch-stall",
+        "quantity": 15,
+        "from_assembly_key": "gb-spring@1",
+        "to_assembly_key": "gb-spring-b@1",
+        "to_label_key": "label-gb-b@1",
+        "partners": ["partner-park", "partner-bakery", "partner-charity-org"],
+        "feasible": true,
+        "blocked_reason": ""
+      }
+    ]
+  }
+}
